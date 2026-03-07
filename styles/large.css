@@ -1,0 +1,12 @@
+
+@media (min-width: 640px) {
+
+  .navigation {
+    display: block;
+   }
+
+  .navigation ul {
+    display: flex;
+   
+  }
+}

@@ -1,0 +1,55 @@
+/*  Color Scheme***********************
+
+
+*/
+* {
+    box-sizing: border-box;
+}
+header {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px black;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ header span {
+    font-size: 24px;
+    color:green;
+}
+
+.hamb {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamb::before {
+    content: "\2630";
+    
+}
+
+.hamb.show::before {
+    content: "\00D7";
+     
+}
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+.clear  {
+    list-style-type: none;
+}
+
+
+    
