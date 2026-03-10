@@ -4,6 +4,9 @@
 */
 * {
     box-sizing: border-box;
+
+/* HEADER */
+
 }
 header {
     display: grid;
@@ -22,13 +25,14 @@ header img {
     font-size: 24px;
     color:green;
 }
-
+/* hambuger Menu */
 .hamb {
     border: none;
     background: none;
     font-size: 24px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: red solid 1px;
 }
 
 .hamb::before {
@@ -38,18 +42,72 @@ header img {
 
 .hamb.show::before {
     content: "\00D7";
-     
+     color:rgb(54, 54, 240)
 }
+
+/* Navigation   ***************************************************** */
 .navigation {
   display: none;
+  
 }
 
 .navigation.show {
   display: block;
 }
- ul {
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display:block;
+    padding: 14px 10px;
+}
+/* ************************************************************** */
+ a {
+    text-decoration: none;
+    
+}
+ul {
     list-style-type: none;
+    
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
-    
+/* footer******************************************************* */
+
+footer {
+    background-color: antiquewhite;
+    padding: 16px 0px;
+    text-align: center;
+}
+.clmedia {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.clmedia a {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: red dashed 1px;
+}
+
+/* Main************************************** */
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    border: solid green 1px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}

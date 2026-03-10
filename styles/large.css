@@ -7,6 +7,32 @@
 
   .navigation ul {
     display: flex;
+   flex-direction: row;
+   height: 35px;
+   font-size: 30px;
    
   }
+  .hamb {
+    display: none;
+  }
+
+  ul a {
+    display:block;
+    background-color: aqua;
+    padding: 10px;
+}
+main {
+  grid-template-columns: 70% %;
+}
+section {
+    border: solid black 1px;
+}
+h1 {
+    grid-column: 1/ span 2;
+}
+.wide {
+    grid-column: 1/ span 2;
+}
+
+
 }
