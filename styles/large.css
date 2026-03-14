@@ -3,36 +3,86 @@
 
   .navigation {
     display: block;
+    background-color: aqua;
    }
 
   .navigation ul {
-    display: flex;
+   display: flex;
    flex-direction: row;
-   height: 35px;
-   font-size: 30px;
+   justify-content: space-around;
+   font-size: 20px;
    
   }
   .hamb {
     display: none;
   }
 
-  ul a {
+  /* ul a {
     display:block;
     background-color: aqua;
     padding: 10px;
-}
+} */
 main {
-  grid-template-columns: 70% %;
-}
+  /* grid-template-columns: 70% 30%;
+} */
 section {
     border: solid black 1px;
 }
 h1 {
     grid-column: 1/ span 2;
 }
+/* .head {
+  grid-area: title;
+}
+.content {
+  grid-area: mycontent;
+}
+.pic {
+  grid-area: picture;
+}
 .wide {
-    grid-column: 1/ span 2;
+  grid-area: cert;
+}
+.wide {
+    /* grid-column: 1/ span 2; 
+    display: grid;
+    grid-template-areas: 
+    "title title title title title"
+    "mycontent mycontent mycontent picture picture"
+    "cert cert cert cert cert";
+    /* grid-template-columns: 1fr 3fr; 
+    gap: 10px;
+    padding: 5px;
+
+  }*/
+ 
+
+.wide button {
+  
+  flex-direction: column;
+}
+.wide h2 {
+ 
+  min-width: 320px;
+  max-width: 100%;
 }
 
+}
+.two { 
+  display: flex;
+ 
+  
+}
+.content {
+  flex-grow: 3;
+}
+.pic {
+  flex-grow: 1;
+}
 
+.thebutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 }

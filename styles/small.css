@@ -14,6 +14,7 @@ header {
     padding: 5px 0 5px 10px;
     border-bottom: solid 1px black;
     column-gap: 10px;
+    width: 100%;
 }
 
 header img {
@@ -27,12 +28,13 @@ header img {
 }
 /* hambuger Menu */
 .hamb {
+    display: block;
     border: none;
     background: none;
     font-size: 24px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: red solid 1px;
+   /*  border: red solid 1px; */
 }
 
 .hamb::before {
@@ -42,7 +44,7 @@ header img {
 
 .hamb.show::before {
     content: "\00D7";
-     color:rgb(54, 54, 240)
+   
 }
 
 /* Navigation   ***************************************************** */
@@ -60,7 +62,7 @@ header img {
 }
 .navigation a {
     display:block;
-    padding: 14px 10px;
+    padding:10px 10px;
 }
 /* ************************************************************** */
  a {
@@ -72,10 +74,10 @@ ul {
     
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* footer******************************************************* */
 
@@ -101,13 +103,28 @@ footer {
 /* Main************************************** */
 
 main {
-    display: grid;
-    grid-template-columns: 100%;
+   /*  display: grid;
+    grid-template-columns: 100%; */
     border: solid green 1px;
+    gap: 20px;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding:0px;
+}
 
+.wide button {
+    display: flex;
+    
+   /*  width: 100%; */
+   min-width: 320px;
+   justify-content: center;
+}
+.wide {
+    display: flex;
+    flex-direction: column;
+    
 }
