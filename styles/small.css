@@ -99,7 +99,7 @@ footer {
     align-items: center;
     width: 60px;
     height: 60px;
-    border: red dashed 1px;
+    /* border: red dashed 1px; */
 }
 
 /* Main************************************** */
