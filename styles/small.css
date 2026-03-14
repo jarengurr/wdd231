@@ -26,7 +26,7 @@ header img {
 }
  header span {
     font-size: 24px;
-    color: rgb(8, 240, 39);
+    color: rgb(4, 143, 23);
 }
 /* hambuger Menu */
 .hamb {
@@ -135,4 +135,8 @@ body {
 }
 .pic {
     justify-content: center;
+}
+.myclear li a {
+    color: black;
+    
 }
