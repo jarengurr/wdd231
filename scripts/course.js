@@ -25,4 +25,7 @@ const classes = [
 
 
 
-const navButton = document.querySelector("#ham-bt");
+const classButton = document.querySelector("#myClasses");
+
+classButton.querySelector(".piclist").appendChild("testone");
+classButton.querySelector(".piclist").appendChild("testtwo");
