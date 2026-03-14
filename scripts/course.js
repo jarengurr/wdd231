@@ -27,5 +27,6 @@ const classes = [
 
 const classButton = document.querySelector("#myClasses");
 
-classButton.querySelector(".piclist").appendChild("testone");
+/* classButton.querySelector(".piclist").appendChild("testone");
 classButton.querySelector(".piclist").appendChild("testtwo");
+ */
