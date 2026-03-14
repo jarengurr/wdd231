@@ -38,7 +38,7 @@ const myClases = classes;
 function showAll() {
      
    myClases = myClases;
-    createTempleCard();
+    createClassCard();
 }
 
 
@@ -47,26 +47,35 @@ function showWdd() {
     
     //document.querySelector(".piclist").removeChild();
     
-    mytemples = mytemples.filter(temple => temple.area > 90000);
-    createTempleCard();
+    myClases = myClases.filter(classes = classes.classType = "wdd");
+    createClassCard();
 }
 function showCse() {
     
     
-    mytemples = mytemples.filter(temple => temple.area > 90000);
-    createTempleCard();
+    mytemples = mytemples.filter(classes = classes.classType = "cse");
+    createClassCard();
 }
 function findCredits() {
        
-    mytemples = mytemples.filter(temple => temple.area > 90000);
-    createTempleCard();
+    mytemples = mytemples.filter(classes => classes.area > 90000);
+    createClassCard();
 }
 
+function createClassCard() {
+    mytemples.forEach(classes => {
+        let classcard = document.createElement("section");
+        let cardName = document.createElement("p"); 
+        cardName.textContent = classes.className;
+        classcard.appendChild(cardName);
+       
+        document.querySelector(".cardlist").appendChild(classcard);
 
 
+    }
 
-const classButton = document.querySelector("#myClasses");
+    )
+};
 
-/* classButton.querySelector(".piclist").appendChild("testone");
-classButton.querySelector(".piclist").appendChild("testtwo");
- */
+
+ /* classButton.querySelector(".cardlist").appendChild("testone"); */
