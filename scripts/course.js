@@ -1,4 +1,4 @@
-const classes = [
+const classes2 = [
     {
         className: "CSE110",
         classType: "cse",
@@ -33,11 +33,11 @@ const classes = [
     ];
 
 
-const myClases = classes;
+let myClases = classes2;
 
 function showAll() {
      
-   myClases = myClases;
+   myClases = classes;
     createClassCard();
 }
 
@@ -53,17 +53,25 @@ function showWdd() {
 function showCse() {
     
     
-    mytemples = mytemples.filter(classes = classes.classType = "cse");
+    myClases = myClases.filter(classes = classes.classType = "cse");
     createClassCard();
 }
 function findCredits() {
        
-    mytemples = mytemples.filter(classes => classes.area > 90000);
+    myClases = myClases.filter();
     createClassCard();
+}
+function addCredits() {
+    let holdcredit = 0;
+    myClases.forEach(classes => {
+    if (classes.completed == "YES") {
+        holdcredit = holdcredit + classes.credit;
+    }
+})
 }
 
 function createClassCard() {
-    mytemples.forEach(classes => {
+    myClases.forEach(classes => {
         let classcard = document.createElement("section");
         let cardName = document.createElement("p"); 
         cardName.textContent = classes.className;
