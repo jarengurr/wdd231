@@ -133,10 +133,21 @@ body {
 .content {
     font-family: "Quicksand", sans-serif;
 }
-.pic {
+.pic img {
     justify-content: center;
 }
 .myclear li a {
     color: black;
-    
+
+}
+.list {
+  display:flex;
+   display: column;
+  justify-content: space-around;
+}
+.cardlist {
+  display: flex;
+  
+  background-color: antiquewhite;
+  border: solid 1px black;
 }

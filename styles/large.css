@@ -85,11 +85,11 @@ h1 {
   height: 48px;
 }
 
-.list {
+ .list {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} 
 .cardlist {
   display: flex;
   background-color: antiquewhite;
