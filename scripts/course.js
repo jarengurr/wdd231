@@ -37,7 +37,7 @@ let myClases = classes2;
 
 function showAll() {
      
-   myClases = classes;
+   myClases = classes2;
     createClassCard();
 }
 
@@ -47,13 +47,13 @@ function showWdd() {
     
     //document.querySelector(".piclist").removeChild();
     
-    myClases = myClases.filter(classes = classes.classType = "wdd");
+    myClases = myClases.filter(myClases = myClases.classType = "wdd");
     createClassCard();
 }
 function showCse() {
     
     
-    myClases = myClases.filter(classes = classes.classType = "cse");
+    myClases = myClases.filter(myClases = myClases.classType = "cse");
     createClassCard();
 }
 function findCredits() {
