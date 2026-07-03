@@ -1,0 +1,24 @@
+/*  Color Scheme***********************
+ rgb(4, 143, 23); light green or calmgreen
+ black
+  green
+   antiquewhite
+
+*/
+* {
+    box-sizing: border-box;
+
+}
+/*******************************************HEADER**********************************************/
+header {
+    display: grid;
+    grid-template-columns: 24px, auto, 46px;
+    padding: 5px, 0, 5px, 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
