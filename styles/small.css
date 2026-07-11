@@ -13,7 +13,7 @@
 header {
     display: grid;
     grid-template-columns: 24px auto 46px;
-    padding: 5px, 0, 5px, 10px;
+    padding: 5px 0 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
@@ -29,7 +29,7 @@ header img {
 }
 header span {
     font-size:  24px;
-    color: rgb(78, 212, 96);
+    color:green;
 }
 /***********************************NAVIGATION HAMBURGER *********************************************/
 
@@ -163,9 +163,14 @@ body {
    
 }*/
  h2 {
-    background-color:rgb(62, 207, 81);
+    background-color:antiquewhite;
    padding: 10px;
     margin-bottom: 0;
+ }
+.wide div h2 {
+    background-color:rgb(62, 207, 81);
+}
+
 
 }
 .content  p {
@@ -193,11 +198,15 @@ body {
     align-self: center;
     border: black solid 2px;
     margin-top: 0;
-     
+     justify-content: center;
+  align-items: center;
 }
 .pic img {
     align-self: center;
-   
+    justify-content: center;
+    width: 150px;
+    height:auto;
+   padding-bottom: 30px;
 }
 .pic h2 {
     padding: 20px;
@@ -205,4 +214,7 @@ body {
 }
 .mypic {
     background-color: antiquewhite;
+}
+h1 {
+    background-color: rgb(62, 207, 81);;
 }
