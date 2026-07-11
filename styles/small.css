@@ -166,7 +166,8 @@ body {
     justify-content: center;
     width: 150px;
     height:auto;
-    padding-bottom: 30px;
+    padding: 50px;
+    padding-top: 20px;
 }
 .pic h2 {
     padding: 20px;

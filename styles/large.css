@@ -72,8 +72,8 @@ h1 {
 .content {
   height: 100%;
 }
-.pic {
-  
+.pic img {
+  padding: 30px;
 }
 
 .thebutton {
@@ -94,6 +94,7 @@ h1 {
   background-color: antiquewhite;
 }
 main {
+  
   display: flex;
   flex-direction: column;
 }
