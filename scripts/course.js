@@ -120,53 +120,20 @@ abutton3.addEventListener("click", () => {
 
 
 
-//});
-/*
-document.addEventListener("DOMContentLoaded", () => {
-    //const abutton = document.getElementById("cse");
-   
 
-    abutton.addEventListener("click", () => {
-        myClases = myClases.filter(classes => classes.subject === "CSE");
-        createClassCard();
-});
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-    const abutton = document.getElementById("wdd");
-    
-    abutton.addEventListener("click", () => {
-      myClases = myClases.filter(classes => classes.subject === "WDD");
-      createClassCard();
-});
-});
-
-*/
-
-/*function findCredits() {
-       
-    myClases = myClases.filter();
-    createClassCard();
-}
-function addCredits() {
-   
-    myClases.forEach(classes => {
-    if (classes.completed == "true") {
-        holdcredit = holdcredit + classes.credits;
-    }
-})
-}*/
 
 function createClassCard() {
     
-    
+    let holdcount = 0;
     //document.getElementsByClassName("cardlist").clear();
     myClasses.forEach(classes => {
         let classcard = document.createElement("section");
         let cardName = document.createElement("p"); 
+        //cardName.className = holdcount;
         cardName.textContent = classes.subject + classes.number;
         classcard.appendChild(cardName);
-       
+        //document.getElementById("thelist").style.backgroundColor = "red";
         document.querySelector(".cardlist").appendChild(classcard);
 
         //holdcount = holdcount + 1;//test

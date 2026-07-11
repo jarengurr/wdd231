@@ -11,7 +11,7 @@
 header {
     display: grid;
     grid-template-columns: 24px auto 24px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 10px 5px 10px;
     border-bottom: solid 1px black;
     column-gap: 10px;
     width: 100%;
@@ -36,6 +36,7 @@ header img {
     font-size: 24px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 10px;
    /*  border: red solid 1px; */
 }
 
@@ -105,10 +106,10 @@ footer {
 /* Main************************************** */
 
 main {
-   /*  display: grid;
-    grid-template-columns: 100%; */
+   display: grid;
+    grid-template-columns: 100%;
     
-    gap: 40px;
+    
 }
 
 body {
@@ -138,6 +139,7 @@ body {
     align-self: center;
     border: black solid 2px;
     margin-top: 0;
+    height: auto;
 }
 .content h2 {
     padding:20px;
@@ -169,6 +171,9 @@ body {
 .pic h2 {
     padding: 20px;
     margin: 0;
+    
+    width: 100%;
+    
 }
 .mypic {
     background-color: antiquewhite;
@@ -177,7 +182,10 @@ body {
 h1 {
     background-color: rgb(62, 207, 81);
 }
-
+h2 {
+    text-align: center;
+    background-color: rgb(62, 207, 81);
+}
 
 .myclear li a {
     color: black;
@@ -201,13 +209,17 @@ h1 {
 .cardlist section {
     border: solid 5px black;
     justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    
 }
 .thebutton {
-    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
 }
-.wide h2 {
-    background-color: rgb(62, 207, 81);
-}
+ 
 .two {
     gap: 15px;
+    padding: 10px;
 }
