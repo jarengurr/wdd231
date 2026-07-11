@@ -1,4 +1,4 @@
-const courses = [
+  const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -78,48 +78,75 @@ const courses = [
     }
 ]
 
-//document.addEventListener("click", myFunction);
 
- //const abutton = document.getElementById("ALL");
-// function myFunction() {
- // document.querySelector('#alist').innerHTML = "fullName(firstName, lastName)";
-//}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const abutton = document.getElementById("all");
-    const cbutton = document.getElementById("cse");
-    const wbutton = document.getElementById("wdd");
-
-    abutton.addEventListener("click", () => {myClases
-        myClases = myClases.filter(classes => classes.certificate === "Web and Computer Programming");
-        createForm();
-    })  
-    
-    cbutton.addEventListener("click", () => {
-        myClases = myClases.filter(classes => classes.subject === "CSE");
-        createForm();
-});
-
-
-    wbutton.addEventListener("click", () => {
-      myClases = myClases.filter(classes => classes.subject === "WDD");
-      createForm();
-});
-
-
-
-});
-
-
-let myClases = courses;
+let myClasses = courses;
 let holdcredit = 0;
 let holdcount = 0;
 
+const abutton = document.getElementById("all");
+const abutton2 = document.getElementById("cse");
+const abutton3 = document.getElementById("wdd");
 
-function findCredits() {
+
+//document.addEventListener("DOMContentLoaded", () => {
+    //const abutton = document.getElementById("all");
+    
+
+abutton.addEventListener("click", () => {
+        document.getElementById("thelist").style.display = "flex";
+        myClasses = courses.filter(classes => classes.certificate === "Web and Computer Programming");
+        document.getElementById("alist").innerHTML = "";
+        createClassCard();
+
+       
+});
+
+
+abutton2.addEventListener("click", () => {
+        document.getElementById("thelist").style.display = "flex";
+        myClasses = courses.filter(classes => classes.subject === "CSE");
+        document.getElementById("alist").innerHTML = "";
+        createClassCard();
+});
+
+
+abutton3.addEventListener("click", () => {
+        document.getElementById("thelist").style.display = "flex";
+        myClasses = courses.filter(classes => classes.subject === "WDD");
+        document.getElementById("alist").innerHTML = "";
+        createClassCard();
+});
+
+
+
+
+//});
+/*
+document.addEventListener("DOMContentLoaded", () => {
+    //const abutton = document.getElementById("cse");
+   
+
+    abutton.addEventListener("click", () => {
+        myClases = myClases.filter(classes => classes.subject === "CSE");
+        createClassCard();
+});
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const abutton = document.getElementById("wdd");
+    
+    abutton.addEventListener("click", () => {
+      myClases = myClases.filter(classes => classes.subject === "WDD");
+      createClassCard();
+});
+});
+
+*/
+
+/*function findCredits() {
        
     myClases = myClases.filter();
-    createForm();
+    createClassCard();
 }
 function addCredits() {
    
@@ -128,12 +155,13 @@ function addCredits() {
         holdcredit = holdcredit + classes.credits;
     }
 })
-}
+}*/
 
-function createForm() {
+function createClassCard() {
     
     
-    myClases.forEach(classes => {
+    //document.getElementsByClassName("cardlist").clear();
+    myClasses.forEach(classes => {
         let classcard = document.createElement("section");
         let cardName = document.createElement("p"); 
         cardName.textContent = classes.subject + classes.number;
@@ -141,11 +169,12 @@ function createForm() {
        
         document.querySelector(".cardlist").appendChild(classcard);
 
-        holdcount = holdcount + 1;
+        //holdcount = holdcount + 1;//test
     }
-)
-    document.querySelector('#alist').innerHTML = "fullName(firstName, lastName)";
+
+    )
 };
+
 
 
 
