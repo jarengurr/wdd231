@@ -131,6 +131,9 @@ body {
     flex-direction: column;
    
 }
+.wide h2 {
+    height: 30px;
+}
 
 .content {
     font-family: "Quicksand", sans-serif;
