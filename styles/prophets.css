@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #cards {
     display: grid;
 	grid-gap: 0.5rem;
@@ -15,3 +19,22 @@ section {
 section img {
     filter:drop-shadow(8px 8px 10px);
 }
+ body {
+    display:block;
+ }
+ h1 {
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 35px;
+    height: 200px;
+ }
+ footer {
+    background-color: aquamarine;
+    text-align: center;
+    padding-bottom: 20px;
+   
+    font-size: 25px;
+    padding: 40px;
+    margin-top: 10px;
+ }
