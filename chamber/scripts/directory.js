@@ -71,7 +71,7 @@ const displayMembers = (members) => {
         cards.appendChild(card);
         //document.querySelector("#cards").appendChild(card);
     });
-}
+}//change
 
 
 
