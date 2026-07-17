@@ -24,11 +24,7 @@ body {
 
 
 
-nav ul {
-    display:flex;
-    justify-content: right;
-     text-decoration: none;
-}
+
 
 header {
     /*
@@ -50,7 +46,7 @@ header {
    
 }
 
-/* hambuger Menu */
+/* hambuger Menu ******************************************************/
 .hamb {
     display: block;
     border: none;
@@ -220,7 +216,11 @@ footer {
 #nav-list.show {
     display:block;
 }
-
+nav ul {
+    display:flex;
+    justify-content: right;
+     text-decoration: none;
+}
 /*******************************************************/
 
  .list {
