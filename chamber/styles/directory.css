@@ -195,7 +195,7 @@ footer {
 #ham-bt.show::before {
     content: "X";
 }
-
+  
 /* Navigation   ***************************************************** */
 .navigation {
   display: none;

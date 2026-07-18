@@ -5,7 +5,7 @@ function setTitle(course) {
 
 function renderSections(sections) {
   const html = sections.map(
-    (section) => `<tr>
+    section => `<tr>
     <td>${section.sectionNumber}</td>
     <td>${section.enrolled}</td>
     <td>${section.instructor}</td></tr>`
@@ -13,16 +13,4 @@ function renderSections(sections) {
   document.querySelector("#sections").innerHTML = html.join("");
 }
 
-export function setTitle(course) {
-  document.querySelector("#courseName").textContent = course.name;
-  document.querySelector("#courseCode").textContent = course.code;
-};
-
-export function renderSections(sections) {
-    const html = sections.map(
-    (section) => `<tr>
-    <td>${section.sectionNumber}</td>
-    <td>${section.enrolled}</td>
-    <td>${section.instructor}</td></tr>`)
-   };
-//export { setTitle, renderSections };
+export { setTitle, renderSections };
