@@ -15,7 +15,7 @@ main {
 
 body {
     font-family: Lora, sans-serif;
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding:0px;
@@ -27,15 +27,7 @@ body {
 
 
 header {
-    /*
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 0px;
-   /* border : 1px solid #bbb; 
-    color: black;
-    background-color: rgb(54, 243, 54);
    
-    text-decoration: none;*/
     display: grid;
     grid-template-columns: 24px auto auto;
     padding: 5px 0 5px 10px;
@@ -43,10 +35,22 @@ header {
     column-gap: 10px;
     width: 100%;
     background-color: rgb(54, 243, 54);
-   
+   text-decoration: none;
+}
+header img {
+    padding-top: 10px;
 }
 
 /* hambuger Menu ******************************************************/
+
+
+.active::before {
+    content: "📍";
+    }
+ 
+/**********HAMB*************************/
+
+
 .hamb {
     display: block;
     border: none;
@@ -66,6 +70,7 @@ header {
     content: "\00D7";
    
 }
+/*
 .hamb.show  {
     display:block;
     text-decoration: none;
@@ -77,21 +82,29 @@ header {
     color:black;
     
 }
+*/
 
-.hamb.open::before {
-    content: "X";
+/* Navigation   ***************************************************** */
+.navigation {
+  display: none;
+  
 }
-header img {
-    padding-top: 10px;
+.navigation.show {
+  display: block;
+  height: 100px;
 }
-.active::before {
-    content: "📍";
-    }
-.show li {
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
     display:block;
-
+    padding:10px 10px;
+    text-decoration: none;
 }
 
+
+/***************************************/
 .name {
     font-size: xx-large;
     /* padding-top: 20px; */
@@ -159,69 +172,9 @@ footer {
     padding: 8px;
 }
 
-.navigate {
-    list-style: none;
-    margin: 0 auto;
-    
-    display: flex;
-    text-decoration: none;
-    flex-direction: column;
-    font-size: 25px;
-    max-width: 100%;
-    align-items: center;
-}
 
-.navigate li {
-    display:none;
-   
-}
-.navigate a {
-    display: block;
-    
-    text-decoration: none;
-    
-    text-align: center;
-    padding: 0.5rem 1rem;
-    width: auto;
-}
-.navigate a:hover,
-.navigate a:active {
-    color:red;
-    background-color:  rgb(54, 243, 54);
-    justify-content: space-between;
-    text-align: center;
-}
-
-#ham-bt.show::before {
-    content: "X";
-}
   
-/* Navigation   ***************************************************** */
-.navigation {
-  display: none;
-  
-}
-
-.navigation.show {
-  display: block;
-}
-.navigation ul {
-    margin: 0;
-    padding: 0;
-}
-.navigation a {
-    display:block;
-    padding:10px 10px;
-}
-#nav-list.show {
-    display:block;
-}
-nav ul {
-    display:flex;
-    justify-content: right;
-     text-decoration: none;
-}
-/*******************************************************/
+/****************/
 
  .list {
     display:flex;
