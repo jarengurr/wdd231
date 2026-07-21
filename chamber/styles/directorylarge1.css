@@ -1,0 +1,114 @@
+
+@media screen and (min-width: 1201px) {
+
+
+    .navigate {
+        text-decoration: none;
+        flex-direction: row;
+        background-color: rgb(54, 243, 54);
+        justify-content: space-evenly;
+        font-size: 20px;
+        color: black;
+
+    }
+    .active::before {
+    /* content:"📍"; */
+    font-style: italic;
+    }
+    .navigate a {
+        text-align: right;
+        justify-content: space-between;
+        color: black;
+    }
+    .navigate li {
+        display:block;
+        flex: 1 1 auto;
+        text-decoration: none;
+        
+    }
+    .navigate li a {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #ham-bt {
+        display: none;
+    }
+    nav li a:hover {
+        text-decoration: none;
+        
+        
+        color:red;
+    }
+    header {
+        padding: 20px;
+    }
+    .name {
+       
+    }
+    .navigation {
+    display: block; 
+    /* background-color:rgb(4, 143, 23); */
+   }
+
+  .navigation ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 20px;
+   
+  }
+  .hamb {
+    display: none;
+  }
+  .maingrid {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+    }
+    .business {
+        grid-column: 1/ span 3;
+    }
+
+
+  .bigmenu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5px 0 5px 10px;
+        border-bottom: solid 1px black;
+        column-gap: 10px;
+        width: 100%;
+        background-color: rgb(54, 243, 54);
+        text-decoration: none;
+}
+
+.myheader {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 20px;
+}
+}
+
+    
+
+    @media screen and (min-width: 1201px) {
+   
+
+   /* .bigmenu {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation a {
+    width: 70px;
+}
+*/
+
+.bigmenu {
+   grid-template-columns: 24px auto auto;
+}
+.navigation a {
+    width:110px;
+}
+
+}   
+

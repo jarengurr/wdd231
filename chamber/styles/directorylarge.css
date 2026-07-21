@@ -1,114 +1,104 @@
-
 @media screen and (min-width: 1201px) {
-
-
+ 
+    /* Navigation */
     .navigate {
-        text-decoration: none;
+        display: flex;
         flex-direction: row;
-        background-color: rgb(54, 243, 54);
         justify-content: space-evenly;
-        font-size: 20px;
+        align-items: center;
+        list-style: none;
+        background-color: rgb(54, 243, 54);
+        font-size: 2px;
         color: black;
-
+        margin: 0;
+        padding: 0;
+        
+    }
+    .active {
+        text-align: right;
+        width: 150px;
     }
     .active::before {
-    /* content:"📍"; */
-    font-style: italic;
+        font-style: italic;
     }
-    .navigate a {
-        text-align: right;
-        justify-content: space-between;
-        color: black;
-    }
+ 
     .navigate li {
-        display:block;
+        display: block;
         flex: 1 1 auto;
-        text-decoration: none;
-        
     }
+ 
     .navigate li a {
+        display: block;
         text-align: center;
-        justify-content: center;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
     }
-
-    #ham-bt {
+ 
+    .navigate li a:hover {
+        color: red;
+    }
+ 
+    /* Hide hamburger */
+    #ham-bt,
+    .hamb {
         display: none;
     }
-    nav li a:hover {
-        text-decoration: none;
-        
-        
-        color:red;
+ 
+    /* Navigation */
+    .navigation {
+        display: block;
     }
+ 
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+ 
+    .navigation a {
+        width: 110px;
+    }
+ 
+    /* Header */
     header {
         padding: 20px;
     }
-    .name {
-       
+ 
+    .myheader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        font-size: 20px;
     }
-    .navigation {
-    display: block; 
-    /* background-color:rgb(4, 143, 23); */
-   }
-
-  .navigation ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   font-size: 20px;
-   
-  }
-  .hamb {
-    display: none;
-  }
-  .maingrid {
+ 
+    /* Main Layout */
+    .maingrid {
         display: grid;
         grid-template-columns: 50% 25% 25%;
+        gap: 10px;
     }
+ 
     .business {
-        grid-column: 1/ span 3;
+        grid-column: 1 / span 3;
     }
-
-
-  .bigmenu {
+ 
+    /* Top Menu */
+    .bigmenu {
         display: grid;
         grid-template-columns: 50% 50%;
+        align-items: center;
         padding: 5px 0 5px 10px;
         border-bottom: solid 1px black;
         column-gap: 10px;
         width: 100%;
         background-color: rgb(54, 243, 54);
-        text-decoration: none;
-}
-
-.myheader {
-    display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   font-size: 20px;
-}
-}
-
-    
-
-    @media screen and (min-width: 1201px) {
-   
-
-   /* .bigmenu {
-        display: flex;
-        justify-content: space-around;
     }
-    .navigation a {
-    width: 70px;
+ 
 }
-*/
-
-.bigmenu {
-   grid-template-columns: 24px auto auto;
-}
-.navigation a {
-    width:110px;
-}
-
-}   
-
