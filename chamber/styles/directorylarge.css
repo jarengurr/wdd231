@@ -2,7 +2,7 @@
 @media screen and (min-width: 1201px) {
 
 
-.navigate {
+    .navigate {
         text-decoration: none;
         flex-direction: row;
         background-color: rgb(54, 243, 54);
@@ -44,7 +44,7 @@
         padding: 20px;
     }
     .name {
-        padding: 0;
+       
     }
     .navigation {
     display: block; 
@@ -61,33 +61,54 @@
   .hamb {
     display: none;
   }
-   .maingrid {
+  .maingrid {
         display: grid;
         grid-template-columns: 50% 25% 25%;
     }
     .business {
         grid-column: 1/ span 3;
     }
+
+
+  .bigmenu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5px 0 5px 10px;
+        border-bottom: solid 1px black;
+        column-gap: 10px;
+        width: 100%;
+        background-color: rgb(54, 243, 54);
+        text-decoration: none;
+}
+
+.myheader {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 20px;
+}
 }
 
     
 
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 1201px) {
    
 
-    
-    .navigate {
-        
-        flex-direction: row;
-        background-color: rgb(54, 243, 54);
-        grid-column: span 3;
-        justify-content: space-between;
-        font-size: 20px;
-        /* width: 100%; */
-        color: black;
- 
+   /* .bigmenu {
+        display: flex;
+        justify-content: space-around;
     }
-  
-    
+    .navigation a {
+    width: 70px;
+}
+*/
+
+.bigmenu {
+   grid-template-columns: 24px auto auto;
+}
+.navigation a {
+    width:110px;
+}
+
 }   
 
