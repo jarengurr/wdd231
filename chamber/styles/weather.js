@@ -1,20 +1,14 @@
 
 //required for url 6d1cf4740ef3b60f5acb10b4578892e0
 const myKey = "6d1cf4740ef3b60f5acb10b4578892e0";
-const lat = "34.54";
-const lon = "-117.29";
+const lat = "49.75";//N
+const lon = "6.64";//E
 const myKey2 = "6d1cf474Oef3b6Of5acb1Ob4578892eO";
 const currentTemp = document.querySelector('#current-temp');
 const theTown = document.querySelector('#town');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const url3 = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
-const url = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
-
-
-
-
-
+const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
 
 
 async function apiFetch() {
@@ -32,6 +26,12 @@ async function apiFetch() {
   }
 }
 function displayResults(data) {
-  
+  console.log("hello");
+  theTown.innerHTML = data.name;
+  captionDesc.textContent = data.weather[0].description;
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const myWeatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; //`https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
+  weatherIcon.setAttribute('src', myWeatherIcon);
+  weatherIcon.setAttribute('alt', data.weather[0].description);
 }
 apiFetch();
