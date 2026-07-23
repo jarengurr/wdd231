@@ -1,25 +1,3 @@
-// date on footer
-const year = document.querySelector("#currentyear");
-const today = new Date();
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-//alert(document.lastModified);
-// returns: Tuesday, December 16, 2017 11:09:42
-//let oLastModif = new Date(document.lastModified)
-
-let lmDate = document.lastModified
-document.getElementById("lastModified").innerHTML = lmDate;
-
-// menu
-const navButton = document.querySelector("#ham-bt");
-const navBar = document.querySelector("#nav-list");
-
-navButton.addEventListener("click", () => {
- 
-  navBar.classList.toggle("show");
-  navButton.classList.toggle("show");
-});
-
-
 // members list in json
 const bfile = '/chamber/data/members.json';
 const cards = document.querySelector('#cards');
@@ -53,12 +31,14 @@ const displayMembers = (members) => {
         phone.innerHTML = `${member.phone}`;
         website.innerHTML = `${member.website}`;
         level.innerHTML = `Membership Level is: ${member.membershipLevel}`;
-       
+
+        
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `${member.companyName}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '50')
         image.setAttribute('height', 'auto')
+        
 
         card.appendChild(image);
         card.appendChild(companyName);
@@ -73,8 +53,6 @@ const displayMembers = (members) => {
     });
 }//change
 
-
-
 // picture and no picture list
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
@@ -88,16 +66,12 @@ gridbutton.addEventListener("click", () => {
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
-const nodeList = document.querySelectorAll("section img");
+listbutton.addEventListener("click", showList); //example using defined function
+//const nodeList = document.querySelectorAll("section img");
 function showList() {
 	display.classList.add("list");
     display.classList.remove("grid");
-    nodeList.classList.toggle("show")
-}
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+    ////nodeList.classList.toggle("show")
 }
 
 

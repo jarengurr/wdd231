@@ -12,10 +12,15 @@
         content="Victorville Chamber of Commerce I, James Jaren Gurr, california, Chamber of commerce ">
     <meta name="author" content="James Jaren Gurr">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directorylarge.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/forcast.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dark.js" defer></script>
     <meta property="og:title" content="Web and Computer programming certificates">
     <meta property="og:description"
         content="web site to list web and computer programming certificates that I have done">
@@ -45,7 +50,7 @@
                     <li><a href="#" class="active">Directory</a></li>
                     <li><a href=#>Join</a></li>
                     <li><a href=#>Discover</a></li>
-                    <li><a href=#>🌓</a></li>
+                    <li><a  href="javascript:void(0);" onclick="darkmode()">🌓</a></li>
                 </ul>
            
             
@@ -70,13 +75,13 @@
             </section>
             <section class="weather">
                 <h2>Current Weather</h2>
-                
+                <p id="town"></p>
                <figure>
                   <img id="symbol" src="" alt="">
                   <figcaption></figcaption>
                 </figure>
                 <p>The current temperature is <span id="current-temp"></span></p>
-                <p id="town"></p>
+                
                <p id="hum"></p>
                 
                 
@@ -87,9 +92,9 @@
             </section>
             <section class="forcast">
                 <h2>Weather Forcast</h2>
-                <p>Today: 105ºF</p>
-                <p>Tommorow: 110ºF</p>
-                <p>Saturday: 100ºF</p>
+                <p id="today"></p>
+                <p id="tommorrow"></p>
+                <p id="next"></p>
             </section>
             <section class="business">
                 <div class="menu">

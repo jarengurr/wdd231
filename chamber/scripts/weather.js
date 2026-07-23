@@ -9,6 +9,8 @@ const theTown = document.querySelector('#town');
 const weatherIcon = document.querySelector('#symbol');
 const captionDesc = document.querySelector('figcaption');
 const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
+
+
 const theHum = document.querySelector('#hum');
 
 async function apiFetch() {
@@ -36,3 +38,4 @@ function displayResults(data) {
   weatherIcon.setAttribute('alt', data.weather[0].description);
 }
 apiFetch();
+

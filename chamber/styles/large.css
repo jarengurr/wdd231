@@ -1,6 +1,6 @@
+
 @media screen and (min-width: 1201px) {
- 
-    /* Navigation */
+/* Navigation */
     .navigate {
         display: flex;
         flex-direction: row;
@@ -102,5 +102,9 @@
     }
     .dark-mode {
         background-color: black;
+    }
+
+    .hero {
+        margin: 0 0;
     }
 }
