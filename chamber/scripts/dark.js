@@ -1,7 +1,12 @@
+const mydarkmode = document.querySelector("#darkmode");
+
+mydarkmode.addEventListener("click", () => {
+   darkmodehead();
+
+});
 
 
-
-function darkmode() {
-   var element = document.getElementsByName('header')
-   element.classList.toggle("dark-mode");
+function darkmodehead() {
+   var element = document.getElementsByName('header');
+   element.classList.toggle(".adarkmode");
 }

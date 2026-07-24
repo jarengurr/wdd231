@@ -36,6 +36,9 @@ header {
     width: 100%;
     background-color: rgb(54, 243, 54);
 }
+.adarkmode {
+    background-color: darkgreen;
+}
  
 .name {
     font-size: 30px;
