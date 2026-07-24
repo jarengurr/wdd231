@@ -6,6 +6,7 @@
   {"companyName":"Education R US", "address":"546 Learn Ave Victorville Ca 92395", "phone":"555-6212", "website":"https:/educationrus.com", "image":"images/schoolbook.svg", "membershipLevel":"1"}, 
   {"companyName":"Pluto TV", "address":"852 Watch Street Victorville Ca 92395", "phone":"555-1233", "website":"https:/plutotv.com", "image":"images/atv.svg", "membershipLevel":"3"}, 
   {"companyName":"Typewriters Anonymous", "address":"2323 Writers block Lane Victorville Ca 92395", "phone":"555-1772", "website":"https:/typewritersanonymous.com", "image":"images/typewriter.svg", "membershipLevel":"1"}, 
+  {"companyName":"BYU TV", "address":"555 Bird lane Victorville Ca 92395", "phone":"555-1263", "website":"https:/byutv.com", "image":"https://external-content.duckduckgo.com/ip3/www.byutv.org.ico", "membershipLevel":"3"}, 
   {"companyName":"Computer Repair", "address":"1111 Zero lane Victorville Ca 92395", "phone":"555-1552", "website":"https:/aynaxtech.com", "image":"images/computer-solid-full.svg", "membershipLevel":"1"}
   
 ]

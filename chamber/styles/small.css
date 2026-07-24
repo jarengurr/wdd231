@@ -17,6 +17,13 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+main a {
+    position:absolute;
+    color: blue;
+    height: 10px;
+    top: 100px;
+    left: 20px;
+}
  
 /* ---------- Header ---------- */
 header {
@@ -151,7 +158,7 @@ h2 {
 }
 
 #cards img {
-    display: none;
+   /* display: none;*/
 }
  
 /* ---------- Grid/List Buttons ---------- */
