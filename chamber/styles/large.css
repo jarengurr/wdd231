@@ -107,4 +107,9 @@
     .hero {
         margin: 0 0;
     }
+
+    main a {
+        top: 150px;
+        left: 300px;
+    }
 }
