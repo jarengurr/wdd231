@@ -32,9 +32,9 @@ async function apiFetchF() {
   console.log("hello");
   //theTown.innerHTML = dataF.name;
   //captionDesc.textContent = data.weather[0].description;
-      todayForcast.innerHTML = `Today: ${dataF.list[0].main.temp}&deg;F`;
-      tommorrowForcast.innerHTML = `Tommorrow: ${dataF.list[1].main.temp}&deg;F`;
-      nextForcast.innerHTML = `Next Day: ${dataF.list[2].main.temp}&deg;F`;
+      todayForcast.innerHTML = `Today: ${dataF.list[0].main.temp.toFixed(1)}&deg;F`;
+      tommorrowForcast.innerHTML = `Tommorrow: ${dataF.list[1].main.temp.toFixed(1)}&deg;F`;
+      nextForcast.innerHTML = `Next Day: ${dataF.list[2].main.temp.toFixed(1)}&deg;F`;
   //theHum.innerHTML = `${ data.main.humidity }% Humidity`;
   //const myWeatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; //`https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
   //weatherIcon.setAttribute('src', myWeatherIcon);

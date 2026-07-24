@@ -31,7 +31,7 @@ function displayResults(data) {
   console.log("hello");
   theTown.innerHTML = data.name;
   captionDesc.textContent = data.weather[0].description;
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;F`;
   theHum.innerHTML = `${ data.main.humidity }% Humidity`;
   const myWeatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; //`https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
   weatherIcon.setAttribute('src', myWeatherIcon);
