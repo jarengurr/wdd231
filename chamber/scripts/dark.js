@@ -8,5 +8,5 @@ mydarkmode.addEventListener("click", () => {
 
 function darkmodehead() {
    var element = document.getElementsByName('header');
-   element.classList.toggle(".adarkmode");
+   element.classList.toggle("adarkmode");
 }
