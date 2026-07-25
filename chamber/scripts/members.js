@@ -7,6 +7,8 @@ async function getBusinessData() {
     const response = await fetch(bfile);
    
     const data = await response.json();
+    console.log(response);
+    console.log(data);
     
     
     const filteredData = data.members.filter(item => Number(item.membershipLevel) > 1);
