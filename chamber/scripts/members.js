@@ -5,9 +5,9 @@ const list = document.querySelector('#alist')
 
 async function getBusinessData() {
     const response = await fetch(bfile);
-    //const response = await fetch('https://jsonplaceholder.typicode.com/todos/'); // request
+   
     const data = await response.json();
-    //console.table(data.members); // temporary testing of data response
+    
     
     const filteredData = data.members.filter(item => Number(item.membershipLevel) > 1);
     const mixed = filteredData.sort(() => Math.random() - 0.5);
