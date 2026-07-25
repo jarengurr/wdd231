@@ -66,14 +66,14 @@
  
     /* Header */
     header {
-        padding: 20px;
+        /*padding: 20px;*/
     }
  
     .myheader {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        /*justify-content: space-around;*/
         gap: 10px;
         font-size: 20px;
     }
@@ -81,7 +81,7 @@
     /* Main Layout */
     .maingrid {
         display: grid;
-        grid-template-columns: 50% 25% 25%;
+        /*grid-template-columns: 50% 25% 25%;*/
         gap: 10px;
     }
  
@@ -96,7 +96,7 @@
         align-items: center;
         padding: 5px 0 5px 10px;
         border-bottom: solid 1px black;
-        column-gap: 10px;
+        
         width: 100%;
         background-color: rgb(54, 243, 54);
     }

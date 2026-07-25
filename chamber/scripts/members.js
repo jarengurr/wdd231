@@ -73,11 +73,11 @@ gridbutton.addEventListener("click", () => {
 });
 
 listbutton.addEventListener("click", showList); //example using defined function
-//const nodeList = document.querySelectorAll("section img");
+const nodeList = document.querySelectorAll("section img");
 function showList() {
 	display.classList.add("list");
     display.classList.remove("grid");
-    ////nodeList.classList.toggle("show")
+    nodeList.classList.toggle("show")
 }
 
 
