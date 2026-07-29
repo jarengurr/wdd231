@@ -1,8 +1,5 @@
-
-
-
 #box {
-  position: relative;
+  
   margin: 2rem;
   height: 50px;
   width: 50px;
@@ -11,12 +8,11 @@
   background-color: antiquewhite;
   border-radius: 50%;
   box-shadow: 0 0 1rem rgb(0 0 255 / 50%); 
-
+  animation: spin 1.5s linear infinite;
   /* Start at a known transform state */
-  transform: rotate(0deg);
+  
 }
 
-/* Continuous gear pulse */
 #box::after {
   content: '⚙️';
   position: absolute;
@@ -29,28 +25,12 @@
   animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* On hover: spin once + gear grows during that spin */
-#box:hover {
-  animation: spin-once 1.5s linear 1 forwards;
+@keyframes spin {
+  100% { transform: rotate(360deg); }
 }
 
-#box:hover::after {
-  animation: pulse-on-hover 1.5s ease-in-out 1 forwards;
-}
-
-/* Continuous pulse (gear pulses small forever) */
 @keyframes pulse {
   0%, 100% { transform: translate(-50%, -50%) scale(1); }
   50% { transform: translate(-50%, -50%) scale(1.25); }
 }
 
-/* Gear grows large only during the hover spin */
-@keyframes pulse-on-hover {
-  0%   { transform: translate(-50%, -50%) scale(1.25); }
-  100% { transform: translate(-50%, -50%) scale(3); }
-}
-
-/* Spin exactly one full turn */
-@keyframes spin-once {
-  to { transform: rotate(360deg); }
-}

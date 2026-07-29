@@ -125,6 +125,12 @@ header {
     min-height: 250px;
 
 }
+.maingrid {
+        display: grid;
+        /*grid-template-columns: 33% 33% 33%;*/
+        gap: 10px;
+    }
+ 
 .forcast p {
    padding: 10px;
 }
@@ -158,6 +164,11 @@ h2 {
 }
 
  
+#cards img {
+    display: block;
+    margin: 0 auto 10px;
+    /* display: none;*/
+}
 
 
 /* ---------- Grid/List Buttons ---------- */
@@ -174,15 +185,10 @@ h2 {
     padding: 6px;
     cursor: pointer;
 }
-.grid > img {
-    display: block;
-}
-.grid img {
-    display: block;
-    margin: 0 auto 10px;
-    /* display: none;*/
-}
 
+.grid > img {
+    display: none;
+}
  
 /* ---------- List View ---------- */
 .list {
@@ -221,5 +227,13 @@ footer {
 }
  
 /* ---------- Mobile ---------- */
-
+@media screen and (max-width: 764px) {
+ 
+    .list section {
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+ 
+}
  
