@@ -7,6 +7,7 @@ async function getBusinessData() {
     const response = await fetch(bfile);
    
     const data = await response.json();
+    console.log("start here")
     console.log(response);
     console.log(data);
     
