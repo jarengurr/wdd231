@@ -1,5 +1,5 @@
 // members list in json
-const bfile = "data/members.json";
+const bfile = "data/data2.json";
 const cards = document.querySelector('#cards');
 const list = document.querySelector('#alist')
 
