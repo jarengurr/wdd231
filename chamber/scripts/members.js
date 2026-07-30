@@ -9,7 +9,7 @@ async function getBusinessData() {
     const data = await response.json();
     console.log("start here")
     console.log("data keys:", Object.keys(data));
-`   console.log("members is array:", Array.isArray(data.members));
+   console.log("members is array:", Array.isArray(data.members));
     console.log("members value:", data.members);
     
     
@@ -30,16 +30,16 @@ const displayMembers = (members) => {
         let card = document.createElement("section");
         let companyName = document.createElement("h3");
         let address = document.createElement('p');
-        let phone = document.createElement('p')
+        let phone = document.createElement('p');
         let website = document.createElement('p');
-        let level = document.createElement('p')
+        let level = document.createElement('p');
         let image = document.createElement("img");
 
         
         companyName.textContent = ` ${member.companyName}`;
         address.innerHTML = ` ${member.address}`;
         phone.innerHTML = `${member.phone}`;
-        website.innerHTML = `${member.website}`;
+        website.innerHTML = `${ member.website }; `
         level.innerHTML = `Membership Level is: ${member.membershipLevel}`;
 
         
