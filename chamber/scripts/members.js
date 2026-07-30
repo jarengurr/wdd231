@@ -1,5 +1,5 @@
 // members list in json
-const bfile = "data/data2.json";
+const bfile = "data/members.json";
 const cards = document.querySelector('#cards');
 const list = document.querySelector('#alist')
 
@@ -8,8 +8,9 @@ async function getBusinessData() {
    
     const data = await response.json();
     console.log("start here")
-    console.log(response);
-    console.log(data);
+    console.log("data keys:", Object.keys(data));
+`   console.log("members is array:", Array.isArray(data.members));
+    console.log("members value:", data.members);
     
     
     const filteredData = data.members.filter(item => Number(item.membershipLevel) > 1);
