@@ -1,5 +1,5 @@
 // members list in json
-const bfile = '/chamber/data/members.json';
+const bfile = "data/members.json";
 const cards = document.querySelector('#cards');
 const list = document.querySelector('#alist')
 
