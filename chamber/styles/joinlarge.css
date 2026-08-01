@@ -92,6 +92,61 @@
         background-color: black;
     }
 
-    
+    .mymain {
+        display: flex;
+        flex-direction: row;
+        
+    }
    
+    
+   h2 {
+    text-align: center;
+   }
+   h2 {
+    width: 100%;
+    
+    background-color: black;
+    padding: 8px 0;
+    }
+    .gold button,
+    .sliver button,
+    .bronze button,
+    .none button {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* centers button text too */
+    }
+    .gold, .sliver, .bronze, .none {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(54, 243, 54);
+    }
+   .gold h2 {
+    color: gold;
+   }
+   .sliver {
+    background-color: rgb(54, 243, 54);
+   }
+   .sliver h2 {
+    color: silver;
+   }
+   .bronze {
+    background-color: rgb(54, 243, 54);
+   }
+   .bronze h2 {
+    color: rgb(206, 137, 70);
+   }
+   .none {
+    background-color: rgb(54, 243, 54);
+   }
+   .none h2 {
+    color:lightblue;
+   }
+   div {
+    margin: 10px;
+    height: 130px;
+    width: 300px;
+   }
 }

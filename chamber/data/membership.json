@@ -1,0 +1,26 @@
+{
+"members": [
+    {
+      "membershiptitle": "Gold",
+      "cost": "50",
+      "membershipLevel": 4
+    },
+    {
+      "membershiptitle": "Sliver",
+      "cost": "50",
+      "membershipLevel": 3
+    },
+    {
+      "membershiptitle": "Bronze",
+      "cost": "50",
+      "membershipLevel": 2
+    },
+    {
+      "membershiptitle": "Free",
+      "cost": "0",
+      "membershipLevel": 1
+    }
+    
+    
+  ]
+}
