@@ -194,7 +194,7 @@ label {
     width: 600px;
    }
 .themodal {
-    
+    display: none;
 }
 
 
