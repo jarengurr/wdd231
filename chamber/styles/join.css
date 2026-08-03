@@ -145,13 +145,15 @@ label {
     
    h2 {
     text-align: center;
-   }
-   h2 {
-    width: 100%;
-    
-    background-color: black;
+     width: 100%;
+     background-color: black;
     padding: 8px 0;
-    }
+   }
+  
+   
+    
+    
+    
     .gold button,
     .sliver button,
     .bronze button,
