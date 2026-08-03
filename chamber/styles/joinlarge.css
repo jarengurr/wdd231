@@ -96,6 +96,8 @@
     .mymain {
        
         flex-direction: row;
+        justify-content: center;
+        padding-right: 10%;
         
     }
         
