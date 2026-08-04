@@ -1,5 +1,5 @@
 p {
-    color:red;
+    color:black;
 }
 select {
     width: 2250px;
@@ -8,7 +8,7 @@ select {
 form {
     background-color: blue;
 }
-
+h2,
 .myfont2 {
   font-size: 32px;
   font-family: "Roboto", sans-serif;
@@ -17,10 +17,41 @@ form {
   font-style: normal;
   font-variation-settings: "wdth" 120;
 }
+a,
+p,
 .myfont {
     font-size: 16px;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: black;
+}
+.color,
+.scenarios,
+.purpose,
+.typography,
+.wireframe,
+.name {
+    display: block;
+    background-color:aquamarine;
+    border-style:solid;
+    gap: 10px;
+}
+
+.wireframe {
+    border-style:dashed;
+    padding-bottom: 10px;
+    
+}
+.wireframe li {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
 }
