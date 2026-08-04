@@ -34,7 +34,7 @@ p,
 .wireframe,
 .name {
     display: block;
-    background-color:aquamarine;
+    background-color:antiquewhite;
     border-style:solid;
     gap: 10px;
 }
@@ -54,4 +54,7 @@ body {
     gap: 10px;
     justify-content: center;
     text-align: center;
+}
+h1 {
+    background-color: rgb(54, 243, 54);
 }
