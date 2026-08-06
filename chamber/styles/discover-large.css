@@ -1,7 +1,7 @@
-
 @media screen and (min-width: 1201px) {
 /* Navigation */
     .navigate {
+        background-color: rgb(54, 243, 54);
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -64,7 +64,9 @@
         width: 110px;
     }
  
+    /* Header */
    
+ 
     .myheader {
         display: flex;
         flex-direction: row;
@@ -74,16 +76,7 @@
         font-size: 20px;
     }
  
-    /* Main Layout */
-    .maingrid {
-        display: grid;
-        /*grid-template-columns: 50% 25% 25%;*/
-        gap: 10px;
-    }
- 
-    .business {
-        grid-column: 1 / span 3;
-    }
+    
  
     /* Top Menu */
     .bigmenu {
@@ -100,9 +93,61 @@
         background-color: black;
     }
 
-    .hero {
-        margin: 0 0;
+    
+    .mymain {
+       
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10%;
+        
     }
-
+        
+   
+    
+   h2 {
+    text-align: center;
+    width: 100%;
+    
+    background-color: black;
+    padding: 8px 0;
+    
+   }
+  
+    .gold button,
+    .sliver button,
+    .bronze button,
+    .none button {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* centers button text too */
+    }
+    .gold, .sliver, .bronze, .none {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(54, 243, 54);
+    }
+   .gold h2 {
+    color: gold;
+   }
+   .sliver {
+    background-color: rgb(54, 243, 54);
+   }
+   .sliver h2 {
+    color: silver;
+   }
+   .bronze {
+    background-color: rgb(54, 243, 54);
+   }
+   .bronze h2 {
+    color: rgb(206, 137, 70);
+   }
+   .none {
+    background-color: rgb(54, 243, 54);
+   }
+   .none h2 {
+    color:lightblue;
+   }
    
 }
