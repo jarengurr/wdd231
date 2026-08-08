@@ -94,14 +94,7 @@
     }
 
     
-    .mymain {
-       
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 10%;
-        
-    }
-        
+   
    
     
    
@@ -113,8 +106,6 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
    }
-   main {
-    
-    padding-left: 150px;
-}
+   
+        
 }
