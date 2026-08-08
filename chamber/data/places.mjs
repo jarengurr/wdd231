@@ -40,7 +40,7 @@ export const victorvillefun = [
     "address": "17143 N D Street, Victorville, CA 92394",
     "cost": "Meals (varies by order)",
     "description": "Classic Route 66 diner known for burgers and mid-century style.",
-    "photo": "burger-cafe.webp"
+    "photo": "cafe.webp"
   },
   {
     "name": "Scandia Family Fun Center",
