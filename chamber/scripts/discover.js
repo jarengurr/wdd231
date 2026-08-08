@@ -20,6 +20,8 @@ function displayCards(victorvillefun) {
         const thedescription = document.createElement("p");
         const abutton = document.createElement("button");//learn more
        
+       
+       
         thedescription.innerText = place.description
         card.appendChild(thedescription)
 
@@ -37,10 +39,11 @@ function displayCards(victorvillefun) {
 
 
         abutton.type = "button"
+        abutton.className = "button"
         abutton.id = "push"
         abutton.title = "Learn More"
         abutton.value = "Learn More"
-        //abutton.textContent = "Learn More"
+        abutton.textContent = "Learn More"
         card.appendChild(abutton)
 
         placecards.appendChild(card)

@@ -14,7 +14,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
+    /*width: 100%;*/
     margin: 0 auto;
 }
  
@@ -75,7 +75,7 @@ header {
  
 .navigation ul {
     margin: 0;
-    padding: 0;
+    
     list-style: none;
 }
  
@@ -122,8 +122,8 @@ ul {
 }
 h2 {
     width: 100%;
-    color: white;
-    background-color: black;
+    color: black;
+   
     padding: 8px 0;
 }
  
@@ -135,23 +135,60 @@ h2 {
 #cards {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   margin: 0;
     border: 1px solid black;
     background-color: rgb(54, 243, 54);
     text-align: center;
     padding: 15px;
-    width: 400px;
+    
 }
  
 #cards div {
     border: 2px solid black;
-    padding: 15px;
-    background: white;
+    padding-bottom: 15px;
+    background-color: antiquewhite;
+   
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "goodimg"
+    "address"
+    "description"
+    "thebutton"  
+    ;
+}
+n 
+#cards div h2 {
+    height: auto;
+    grid-area: name;
+    width:100%;
+}
+#cards div  img {
+    grid-area: goodimg;
+}
+#cards div address {
+    grid-area: address;
+}
+#cards div p {
+    grid-area: description;
+}
+#cards div button {
+    grid-area: thebutton;
+    align-items: center;
+    width:100px;
 }
  
-#cards img {
+#cards div figure {
+    display:flex;
+    justify-content: center;
+    width: 300px;
+}
+ 
+#cards div img {
     display: block;
-    margin: 0 auto 10px;
+    margin: 0;
+    width: 300px;
+    
 }
 
 
@@ -175,34 +212,7 @@ h2 {
     display: none;
 }
  
-/* ---------- List View ---------- */
-.list {
-    display: flex;
-    flex-direction: column;
-}
- 
-.list section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column: span 5;
-    padding: 0.25rem;
-}
- 
-.list section * {
-    margin: 0 1rem;
-}
- 
-.list section img {
-    display: none;
-}
- 
-.list section h3 {
-    font-size: 1rem;
-}
- 
-.list section:nth-child(even) {
-    background-color: rgb(54, 243, 54);
-}
+
  
 /* ---------- Footer ---------- */
 footer {
@@ -210,7 +220,13 @@ footer {
     padding: 16px 0;
     text-align: center;
 }
- 
+button {
+   font-size: 20px;
+   background-color:  rgb(54, 243, 54);
+   font-weight:bold;
+}
+
+
 /* ---------- Mobile ---------- */
 @media screen and (max-width: 764px) {
  

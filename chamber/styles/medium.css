@@ -1,0 +1,24 @@
+
+
+@media screen and (min-width: 641px) {
+
+
+ 
+#cards div {
+    
+    grid-template-areas:
+    "goodimg name"
+    "goodimg description"
+    "goodimg address"
+    "goodimg thebutton"  
+    ;
+}
+
+#cards div figure { 
+    grid-area: goodimg;
+     margin: 0; }
+#cards div figure img {
+     display:block;
+      width:100%;
+      height:auto; }
+}

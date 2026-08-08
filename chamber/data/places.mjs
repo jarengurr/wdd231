@@ -8,7 +8,7 @@ export const victorvillefun = [
     "photo": "route66-museum.webp"
   },
   {
-    "name": "Victor Valley Museum (near Victorville in Apple Valley)",
+    "name": "Victor Valley Museum",
     "address": "11873 Apple Valley Road, Apple Valley, CA 92308",
     "cost": "$10 adult; $8 senior/military; $7 student; $5 children (6–12); free under 5",
     "description": "High Desert cultural/natural science exhibits including geology/paleontology, Native American artifacts, and local history (plus a kids area).",
