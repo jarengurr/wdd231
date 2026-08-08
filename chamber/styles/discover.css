@@ -164,7 +164,7 @@ n
  
 #cards div figure {
     display:flex;
-   
+   filter: none;
      width: 300px;
     justify-content: center;
 }
@@ -196,9 +196,7 @@ n
     display: none;
 }
  
-#cards div figure {
-    filter: none;
-}
+
  
 /* ---------- Footer ---------- */
 footer {
