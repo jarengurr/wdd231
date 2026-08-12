@@ -1,0 +1,200 @@
+export const resistortype = [
+  {
+    "type": "Carbon composition",
+    "code": "composition",
+    "inductance": "low",
+    "tolerance": "Often loose tolerance (commonly ~±5% to ±20%, depends on part; many are older legacy styles)",
+    "power_range": "Small to moderate (varies widely by size/era)",
+    "temp_coefficient": "Often relatively high / less stable compared with film types",
+    "noise": "Higher noise and drift than many modern film resistors",
+    "stability": "Typically poorer long-term stability than modern metal/film resistors",
+    "good_for": "Legacy/basic circuits where low cost matters and high precision/stability is not required"
+  },
+  {
+    "type": "Carbon film",
+    "code": "carbonfilm",
+    "inductance": "low",
+    "tolerance": "Typically ~±5% (sometimes ±2%)",
+    "power_range": "Small to moderate",
+    "temp_coefficient": "Relatively high (less stable)",
+    "stability": "Good",
+    "noise": "Generally higher than metal-film",
+    "good_for": "Low-cost, general electronics where tight accuracy/drift is not critical"
+  },
+  {
+    "type": "Metal film",
+    "code": "metalfilm",
+    "inductance": "low",
+    "tolerance": "Typically ~±1%, ±0.5%, ±0.25% (varies)",
+    "power_range": "Small to moderate",
+    "temp_coefficient": "Low",
+    "stability": "Good",
+    "noise": "Low",
+    "good_for": "Audio, filters, stable general-purpose circuits needing decent tolerance and low noise"
+  },
+  {
+    "type": "Metal oxide film",
+    "code": "oxide",
+    "inductance": "low",
+    "tolerance": "Often ±1% to ±2% (common)",
+    "power_range": "Small to moderate",
+    "temp_coefficient": "Low to moderate",
+    "stability": "Good for robust general-purpose use",
+    "noise": "Moderate to low (varies by design)",
+    "good_for": "Robust general-purpose use where reliability is important"
+  },
+  {
+    "type": "Thick film (standard SMD)",
+    "code": "thick",
+    "inductance": "low",
+    "tolerance": "Typically ~±1% to ±5%",
+    "power_range": "Varies by package/size",
+    "temp_coefficient": "Moderate",
+    "stability": "Good enough for many everyday designs",
+    "noise": "Moderate (varies)",
+    "good_for": "Most everyday SMD circuits where cost matters and precision is not extreme"
+  },
+  {
+    "type": "Thin film (precision SMD)",
+    "code": "thin",
+    "inductance": "low",
+    "tolerance": "Typically ~±0.1% down to ±0.01% (varies by part)",
+    "power_range": "Varies by package/size",
+    "temp_coefficient": "Very low",
+    "stability": "Very high (low drift)",
+    "noise": "Low",
+    "good_for": "Precision SMD designs—measurement, stable gain settings, and low-drift applications"
+  },
+  {
+    "type": "Wirewound",
+    "code": "wirewound",
+    "inductance": "low",
+    "tolerance": "Often ±0.5% to ±1% (varies)",
+    "power_range": "Higher power available",
+    "temp_coefficient": "Generally low",
+    "stability": "Good",
+    "noise": "Low to moderate",
+    "good_for": "Higher-power or pulse applications and circuits where stability is important"
+  },
+  {
+    "type": "Precision metal film",
+    "code": "precisionmf",
+    "inductance": "low",
+    "tolerance": "Typically ±0.01% to ±0.05% (varies)",
+    "power_range": "Small to moderate",
+    "temp_coefficient": "Low",
+    "stability": "High",
+    "noise": "Low (varies)",
+    "good_for": "Instrumentation, reference/gain resistors, and tighter-tolerance analog circuits"
+  },
+  {
+    "type": "Low TCR thin film",
+    "code": "lowtcr",
+    "inductance": "low",
+    "tolerance": "Very tight (varies by part)",
+    "power_range": "Typically small (precision types)",
+    "temp_coefficient": "Extremely low (low drift)",
+    "stability": "Very high",
+    "noise": "Low",
+    "good_for": "Metrology-grade or high-accuracy sensing circuits where temperature-induced error must be minimized"
+  },
+  {
+    "type": "Current sense (shunt) resistors",
+    "code": "current",
+    "inductance": "low",
+    "tolerance": "Well-defined resistance at operating currents (varies)",
+    "power_range": "Sized for current; often low resistance (mΩ range)",
+    "temp_coefficient": "Low to moderate (often controlled for drift)",
+    "stability": "High for measured-current applications",
+    "noise": "Low (varies)",
+    "good_for": "Current measurement in power supplies, motor drives, and protection circuits (power electronics)"
+  },
+  {
+    "type": "Power resistors (cement/aluminum chassis/heatslug types)",
+    "code": "power",
+    "inductance": "low",
+    "tolerance": "Moderate (varies)",
+    "power_range": "High dissipation",
+    "temp_coefficient": "Varies by construction",
+    "stability": "Designed for thermal handling",
+    "noise": "Varies",
+    "good_for": "Load resistors, brake/load circuits, and power-supply bleeders that need high power dissipation"
+  },
+  {
+    "type": "High-voltage (HV) resistors",
+    "code": "hv",
+    "inductance": "low",
+    "tolerance": "Varies",
+    "power_range": "Varies",
+    "temp_coefficient": "Varies",
+    "stability": "Designed for voltage withstand and insulation quality",
+    "noise": "Varies",
+    "good_for": "Voltage dividers and high-voltage sensing/clamping networks"
+  },
+  {
+    "type": "Non-inductive resistors",
+    "code": "noninductive",
+    "inductance": "low",
+    "tolerance": "Varies",
+    "power_range": "Varies",
+    "temp_coefficient": "Varies",
+    "stability": "Reduced inductance vs wirewound",
+    "noise": "Varies",
+    "good_for": "Pulse/high-frequency current measurement where wirewound inductance would cause error"
+  },
+  {
+    "type": "Thermistors (NTC/PTC)",
+    "code": "therm",
+    "inductance": "low",
+    "tolerance": "Varies by β value / curve tolerance",
+    "power_range": "Varies",
+    "temp_coefficient": "Strong temperature dependence",
+    "stability": "Depends on operating point and self-heating",
+    "noise": "Varies",
+    "good_for": "Temperature sensing, compensation networks, inrush limiting (NTC), and over-temp protection"
+  },
+  {
+    "type": "Varistors (MOVs — voltage-dependent)",
+    "code": "mov",
+    "inductance": "low",
+    "tolerance": "Varies (clamping/energy ratings are key specs)",
+    "power_range": "Depends on surge energy rating",
+    "temp_coefficient": "Varies",
+    "stability": "Designed for transient handling",
+    "noise": "Varies",
+    "good_for": "Surge protection and voltage clamping for mains/industrial transient events"
+  },
+  {
+    "type": "Potentiometers (variable resistors)",
+    "code": "pot",
+    "inductance": "low",
+    "tolerance": "Varies; often specified by resistance and taper",
+    "power_range": "Limited by mechanical/thermal design",
+    "temp_coefficient": "Varies",
+    "stability": "Mechanical wiper wear can affect long-term use",
+    "noise": "Can be higher due to contact resistance",
+    "good_for": "User-adjustable controls, calibration knobs, and variable gain/threshold circuits"
+  },
+  {
+    "type": "Trimmers (single-turn or multi-turn adjustable resistors)",
+    "code": "trim",
+    "inductance": "low",
+    "tolerance": "Varies by part",
+    "power_range": "Limited",
+    "temp_coefficient": "Varies",
+    "stability": "Often better than generic pots for infrequent adjustment",
+    "noise": "Can vary based on wiper/contact design",
+    "good_for": "One-time or infrequent calibration (e.g., setting offsets, trimming reference circuits)"
+  },
+  {
+    "type": "Rheostats (high-power variable resistors)",
+    "code": "rheostats",
+    "inductance": "low",
+    "tolerance": "Varies",
+    "power_range": "Higher power handling than small pots",
+    "temp_coefficient": "Varies",
+    "stability": "Designed for heavier adjustable load use",
+    "noise": "Varies",
+    "good_for": "Higher-power adjustable loads (e.g., motor control/load adjustment)"
+  }
+]

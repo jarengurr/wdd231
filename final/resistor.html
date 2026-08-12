@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Chamber of commerce Discover page</title>
+    <meta name="description"
+        content=" join Victorville Chamber of Commerce I, James Jaren Gurr, california, Chamber of commerce ">
+    <meta name="author" content="James Jaren Gurr">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/resistor.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/resistor-large.css">
+
+
+
+    <script src="scripts/timeday.js" defer></script>
+    <script src="scripts/resistor-date.js" defer></script>
+    <script src="scripts/resistor-menu.js" defer></script>
+    <script src="scripts/resistors.js" type="module"></script>
+
+
+    <meta property="og:title" content="join Victorville Chamber of Commerce">
+    <meta property="og:description"
+        content="web site to show how to join a Victorville California Chamber of Commerceweb site">
+    <meta property="og:image" content="https://jarengurr.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:image:width" content="250">
+    <meta property="og:image:height" content="250">
+
+    <meta property="og:url" content="https://jarengurr.github.io/wdd231/chamber/index.html">
+    <meta property="og:locale" content="en-US">
+    <link rel="icon" href="images/victorville.ico">
+</head>
+
+<body>
+    <section class="bigmenu">
+        <header class="myheader">
+
+            <img src="images/bee.svg" alt="Site Logo" width="48" height="48">
+            <span class="name">Types of Resistors</span>
+            <button id="ham-bt" class="hamb" aria-label="menu"></button>
+
+        </header>
+
+
+
+        <nav id="nav-list" class="navigation">
+            <ul class="navigate">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="resistors.html">Resistor Overview</a></li>
+                <li><a href="resistortype.html" class="active">Types of Resistors</a></li>
+                <li><a href="convert.html">Color Code Converter</a></li>
+
+                <li><a href="#">🌓</a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+    <main>
+
+        <div id="cards" class="grid"></div>
+
+
+
+        <dialog id="dialogbox" popover="hint">
+            <h2>Modal Dialog</h2>
+            <div></div>
+            <button id="closeModal">Close</button>
+        </dialog>
+        <section>
+            <button id="inductanceI">Inductance</button>
+            <button id="toleranceI">Tolerance</button>
+            <button id="powerI">Power</button>
+            <button id="tempcoeI">Temperature Coefficient</button>
+            <button id="stabilityI">Stability</button>
+            <button id="noiseI">Noise</button>
+            <button id="usesI">Uses</button>
+        </section>
+
+        
+    </main>
+    <footer class="myfooter">
+        <nav class="clmedia"> <!--class used in css-->
+            <a href="https://www.facebook.com/jaren.gurr" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="41" height="41"></a>
+            <a href="https://www.snapchat.com/" target="_blank"><img src="images/snapchat.svg" alt="snapchat" width="41"
+                    height="41"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="41"
+                    height="41"></a>
+
+        </nav>
+        <p>© <span id="currentyear"></span> 🌩 James Jaren Gurr <span class="sun">☀</span> California</p>
+        <p class="modfoot">Last Modified: <span id="lastModified"></span></p>
+        <p id="greeting"></p>
+    </footer>
+</body>
+
+</html>

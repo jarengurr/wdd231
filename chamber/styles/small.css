@@ -80,7 +80,8 @@ header {
  
 .navigation.show {
     display: block;
-    height: 100px;
+    height: 400px;
+    
 }
  
 .navigation ul {
@@ -91,11 +92,13 @@ header {
  
 .navigation a {
     display: block;
-    padding: 10px;
+    
     text-decoration: none;
     color: black;
-    width: 130px;
+    width: 300px;
 }
+
+
  
 /* ---------- Hero ---------- */
 .hero {
