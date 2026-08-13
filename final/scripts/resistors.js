@@ -83,38 +83,10 @@ function displayCards(resistortype) {
 
     });
 
-}
+
    
-        // Get the modal
-//var modal = document.getElementById("myModal");
+   
 
-// Get the button that opens the modal
-//var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-//var span = document.getElementsByClassName("close")[0];
-
-
-// When the user clicks on <span> (x), close the modal
-
-
-// When the user clicks anywhere outside of the modal, close it
-
-/*const modal = document.querySelector('#composition');
-const closeModal = document.querySelector('#closeModal');
- // display the modal dialog right away.
-// Usually you will want to wait for a user action to show the modal dialog
-closeModal.addEventListener('click', () => {
-  modal.close();
-});
-
-    displayCards(resistortype)
-    document.getElementById("composition").addEventListener("click", () =>  {
-        alert("Hello World!");
-        modal.showModal();
-    })
-*/
-displayCards(resistortype)
 const composition = document.querySelector('#composition');
 const carbonfilm = document.querySelector('#carbonfilm');
 const metalfilm = document.querySelector('#metalfilm');
@@ -281,3 +253,5 @@ noiseInfo.addEventListener("click", () => {
 usesInfo.addEventListener("click", () => {
     alert("This is just giving you ideas on how you can best use that resistor.");
 })
+}
+displayCards(resistortype)
