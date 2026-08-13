@@ -328,3 +328,4 @@ function trackVisits() {
     //document.getElementById("visits").innerHTML = hold;
 }
 
+document.getElementById("convert").addEventListener("click", convertColor);
