@@ -181,7 +181,7 @@ thin.addEventListener("click", () =>  {
 })
 wirewound.addEventListener("click", () =>  {
     
-    displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
+    displayBoxText.innerHTML = "This tends to have high inductance but can take a lot of power. There are non-inductive wirewound resistors but the will be more expensive.";
     displayBox.showModal();
     
 })
@@ -273,10 +273,10 @@ tempcoeInfo.addEventListener("click", () => {
     alert("The temperature coefficient tells you how much the resistance of your resistor can change with a change of temperature.");
 })
 stabilityInfo.addEventListener("click", () => {
-    alert("S stable resistor is one that does not change its resistance due to a change in resistor temperature, outside temperature, humitidy, voltage, time or other causes");
+    alert("Stable resistor is one that does not change its resistance due to a change in resistor temperature, outside temperature, humitidy, voltage, time or other causes");
 })
 noiseInfo.addEventListener("click", () => {
-    alert("Tells you how much noise the resistor gives off to a circuit.");
+    alert("Tells you how much noise the resistor gives off to a circuit. Its kind of like the resitor is a sound generator. Not loud enough to hear but a circuit can pick it up.");
 })
 usesInfo.addEventListener("click", () => {
     alert("This is just giving you ideas on how you can best use that resistor.");
