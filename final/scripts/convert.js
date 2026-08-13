@@ -162,7 +162,7 @@ const multiply = [
 const tolerance = [
     {
         tol: 20,
-        name: "None",
+        name: "No",
     },
     
     {
@@ -206,7 +206,7 @@ const tolerance = [
 
 document.addEventListener("DOMContentLoaded", function() {
    
-});
+
 window.onload = function() {
     createFirst();
     createSecond();
@@ -218,8 +218,9 @@ window.onload = function() {
 function createFirst() {
     first.forEach(first1 => {
         const newOption1 = document.createElement("option");
-        newOption1.setAttribute("value", first1.code);
-        newOption1.setAttribute("id", first1.id);
+        //newOption1.setAttribute("value", first1.code);
+        newOption1.value = first1.code;
+        //newOption1.setAttribute("id", first1.id);
         newOption1.textContent = first1.name;
         document.querySelector("#first").appendChild(newOption1);
                
@@ -328,4 +329,9 @@ function trackVisits() {
     //document.getElementById("visits").innerHTML = hold;
 }
 
-document.getElementById("convert").addEventListener("click", convertColor);
+//document.getElementById("convert").addEventListener("click", convertColor);
+
+  const btn = document.getElementById("calculate");
+  btn.addEventListener("click", convertColor);
+
+});

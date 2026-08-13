@@ -177,9 +177,7 @@ select {
     padding-left: 10px;
     font-size: 20px;
 }
-form {
-   background-color: aqua;
-}
+
 button {
     height:30px;
     width: 180px;
@@ -189,4 +187,5 @@ form {
     display:flex;
     flex-direction: column;
     place-items: center;
+    background-color: antiquewhite;
 }
