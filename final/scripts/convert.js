@@ -206,7 +206,7 @@ const tolerance = [
 
 document.addEventListener("DOMContentLoaded", function() {
    
-
+const form = document.getElementById('submitafter');
 window.onload = function() {
     createFirst();
     createSecond();
@@ -335,3 +335,6 @@ function trackVisits() {
   btn.addEventListener("click", convertColor);
 
 });
+
+ 
+
