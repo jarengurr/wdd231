@@ -50,22 +50,22 @@ function displayCards(resistortype) {
         title.innerText = resistor.type
         card.appendChild(title)
 
-        thetolerance.innerText = `TOLERANCE: ${resistor.tolerance}`
+        thetolerance.innerHTML = `<span>TOLERANCE:</span> ${resistor.tolerance}`
         card.appendChild(thetolerance)
 
-        thepower.innerText = `POWER: ${resistor.power_range}`
+        thepower.innerHTML = `<span>POWER:</span> ${resistor.power_range}`
         card.appendChild(thepower)
 
-        thetemp_coeff.innerText = `TEMPERATURE COEFFICIENT: ${resistor.temp_coefficient}`
+        thetemp_coeff.innerHTML = `<span>TEMPERATURE COEFFICIENT:</span> ${resistor.temp_coefficient}`
         card.appendChild(thetemp_coeff)
 
-        thestability.innerText = `STABILITY: ${resistor.stability}`
+        thestability.innerHTML = `<span>STABILITY:</span> ${resistor.stability}`
         card.appendChild(thestability)
 
-        thenoise.innerText = `NOISE: ${resistor.noise}`
+        thenoise.innerHTML = `<span>NOISE:</span> ${resistor.noise}`
         card.appendChild(thenoise)
 
-        goodfor.innerText = `USES: ${resistor.good_for}`
+        goodfor.innerHTML = `<span>USES:</span> ${resistor.good_for}`
         card.appendChild(goodfor)
 
 
@@ -90,6 +90,7 @@ function displayCards(resistortype) {
 const composition = document.querySelector('#composition');
 const carbonfilm = document.querySelector('#carbonfilm');
 const metalfilm = document.querySelector('#metalfilm');
+const metalfoil = document.querySelector('#metalfoil');
 const oxide = document.querySelector('#oxide');
 const thick = document.querySelector('#thick');
 const thin = document.querySelector('#thin');
@@ -116,109 +117,117 @@ closeModal.addEventListener("click", () => {
 
 
 composition.addEventListener("click", () =>  {
-    
-    displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
+    document.getElementById("mytitle").textContent = "Carbon Composition"; 
+    displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It is good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 carbonfilm.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Carbon Film"; 
     displayBoxText.innerHTML = "This is better then a carbon composition resistor.";
     displayBox.showModal();
     
 })
-metalfilm.addEventListener("click", () =>  {
-   
-    displayBoxText.innerHTML = "Much better then the carbon film resistor.";
-    displayBox.showModal();
+metalfilm.addEventListener("click", () => {
+        document.getElementById("mytitle").textContent = "Metal Film";
+        displayBoxText.innerHTML = "Much better then the carbon film resistor.";
+        displayBox.showModal();
     
 })
-oxide.addEventListener("click", () =>  {
+metalfoil.addEventListener("click", () => {
+        document.getElementById("mytitle").textContent = "Metal Foil";
+        displayBoxText.innerHTML = "Better then metal film. And they are not restricted to standard resistance values";
+
+        displayBox.showModal();
     
+    })
+oxide.addEventListener("click", () =>  {
+    document.getElementById("mytitle").textContent = "Metal Oxide Film"; 
     displayBoxText.innerHTML = "A great resistor.";
     displayBox.showModal();
     
 })
 thick.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Thick Film (Standard SMD)"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 thin.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Thin Film (Precision SMD)"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 wirewound.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Wirewound"; 
     displayBoxText.innerHTML = "This tends to have high inductance but can take a lot of power. There are non-inductive wirewound resistors but the will be more expensive.";
     displayBox.showModal();
     
 })
 precisionmf.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Precision Metal Film"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 lowtcr.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Low Tempreture Coefficient"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 current.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Current Sense Resistor"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 power.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "High Power"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 hv.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "High Voltage"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 therm.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Thermistors"; 
     displayBoxText.innerHTML = "This resistor has been around for a long time. It was used in older equipment and devices. It good to experiment with. You can use it to build a L.E.D. circuit because precision or stability is not important. If the resister changes the resistance it will not change the brightness that much.";
     displayBox.showModal();
     
 })
 noninductive.addEventListener("click", () =>  {
-   
+    document.getElementById("mytitle").textContent = "Non-Inductive "; 
     displayBoxText.innerHTML = "Good for high frequency circuits.";
     displayBox.showModal();
     
 })
 mov.addEventListener("click", () =>  {
-    
-    displayBoxText.innerHTML = "MOV or Metal Oxide Varistors are rated for voltage. THey will turn on and draw current only when a voltage level is hit.";
+    document.getElementById("mytitle").textContent = "Metal Oxide Varistor"; 
+    displayBoxText.innerHTML = "MOV or Metal Oxide Varistors are rated for voltage. They will turn on and draw current only when a voltage level is hit.";
     displayBox.showModal();
     
 })
 pot.addEventListener("click", () =>  {
-   
+   document.getElementById("mytitle").textContent = "Potentiometers"; 
     displayBoxText.innerHTML = "These are good for many things like a Volume control.";
     displayBox.showModal();
     
 })
 trim.addEventListener("click", () =>  {
-    
+    document.getElementById("mytitle").textContent = "Trimmers"; 
     displayBoxText.innerHTML = "These are small and some need to be turned by a small screwdriver.";
     displayBox.showModal();
     
 })
 rheostats.addEventListener("click", () =>  {
     //alert("Hello World!");
+    document.getElementById("mytitle").textContent = "Rheostats (High Power variable resistors)"; 
     displayBoxText.innerHTML = "These tend to be big and cost a lot.";
     displayBox.showModal();
     
@@ -233,7 +242,7 @@ const noiseInfo = document.querySelector('#noiseI');
 const usesInfo = document.querySelector('#usesI');
 
 inductinfo.addEventListener("click", () => {
-    alert("Inductance is the ratio of currents rate of change and the voltage of a coil. Inductance does not affect dc circuits too much but in a high frequency AC curcuit, your 5 ohm resistor could become a 7000 ohm resistor");
+    alert("Inductance is the ratio of currents rate of change and the voltage of a coil. Inductance from a wirewound reisistor does not affect dc circuits too much but in a high frequency AC curcuit, your 5 ohm resistor could become a 7000 ohm resistor");
 })
 tolinfo.addEventListener("click", () => {
     alert("The tolerance of a resistor is the range a resistor will have. For example, if you have a 100 ohm resistor at 10% tolerance your resister could be anywhere between 90 ohms to 110 ohms ");

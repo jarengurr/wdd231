@@ -33,6 +33,17 @@ export const resistortype = [
     "good_for": "Audio, filters, stable general-purpose circuits needing decent tolerance and low noise"
   },
   {
+    "type": "Metal Foil",
+    "code": "metalfoil",
+    "inductance": "Very low",
+    "tolerance": "Typically ~±.01% to .005%",
+    "power_range": "Small to moderate",
+    "temp_coefficient": "Very Low",
+    "stability": "Excellent",
+    "noise": "Extremely Low",
+    "good_for": "Precision instrumentation, audio, references, measurement circuits"
+  },
+  {
     "type": "Metal oxide film",
     "code": "oxide",
     "inductance": "low",

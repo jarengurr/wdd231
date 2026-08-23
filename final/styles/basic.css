@@ -15,7 +15,11 @@ header {
     background-color: rgb(54, 243, 54);
 }
 
-
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 15px;
+}
 
 /* ---------- Active Link ---------- */
 .active {
@@ -101,98 +105,10 @@ dialog button {
     padding: .5rem 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
 }
-.name {
-    font-size: 30px;
-    font-weight: 700;
-    padding-left: 15px;
-}
-
-
-/* ---------- Main ---------- */
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#cards {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background-color: rgb(54, 243, 54);
-    padding: 15px;
-}
-
-#cards div {
-    border: 2px solid black;
-    background-color: antiquewhite;
-}
-
-#cards div h2 {
-    height: auto;
-    width: 100%;
-}
-
-#cards div p {
-    padding: 5px;
-}
-
-#cards div button {
-    display: flex;
-    font-family: Lora, sans-serif;
-    font-size: 20px;
-    background-color: rgb(54, 243, 54);
-    font-weight: 400;
-    height: 20px;
-}
-
-#cards div figure,
-#cards div figure img {
-    width: 100%;
-    max-width: 300px;
-}
 
 /* ---------- Footer ---------- */
 footer {
     background-color: antiquewhite;
     padding: 16px 0;
     text-align: center;
-}
-
-
-
-.button {
-    display: flex;
-    
-    gap: 10px;
-    
-}
-
-#dialogbox {
-    position: relative;
-    top: 42%;
-    left: 15%;
-}
-button {
-    flex-basis: 200px;
-    
-}
-main div div {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main div div button {
-    max-height: 40px;
-    text-align: center;
-}
-main div div h2 {
-    
-    text-align: center;
-}
-span {
-    font-weight: 600;
 }
